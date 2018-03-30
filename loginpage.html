@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN PAGE</title>
+    <script>
+        function validateform(){
+            var name=document.myhello.username.value;
+            var password=document.myhello.pass.value;
+            if (name=="murali"||password==123456)
+            {
+                alert("Login Successfull");
+                open("HomePage.html");
+            }
+            else
+            {
+                alert("enter correct name and password");
+            }
+        }
+    </script>
+    <style>
+        h1{
+            color:blue;
+            background-color:aqua;
+
+        }
+        h2{
+            color:black;
+            background-color:brown;
+        }
+        button{
+            color:green;
+        }
+        p{
+            color:aquamarine;
+        }
+        k{
+            color:chartreuse;
+        }
+        a{
+            color:darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+      <center> <h1 fgcolor="red">Welcome To Page</h1></center>
+    <hr />
+    <center> <h2 fgcolor="Orange">Please Login</h2> </center>
+     <hr />
+    <center>
+             <div>
+                 <form name="myhello">
+                     <table bored="1" style="border-collapse:collapse">
+                         <tr>
+                             <th bgcolor="darkgoldenrod"><label for="username" />UserName:</th>
+                             <td><input type="text" name="username" size="40" bgcolor="gray" minlength="6" maxlength="12" placeholder="Enter a valid UserName"></td>
+                         </tr>
+                         <tr>
+                             <th bgcolor="darkgoldenrod"><label for="password" /> Password:</th>
+                             <td><input type="password" name="pass" size="40" bgcolor="gray" minlength="8" maxlength="12" placeholder="Enter a valid Password"></td>
+                         </tr>
+                         <tr>
+                             <th bgcolor="cyan"><button style="background-color:brown" type="button" onclick="validateform()">Login</button></th>
+                             <th bgcolor="cyan">  <button style="background-color:brown" type="reset">reset</button></th>
+                         </tr>
+                         <tr>
+                             <th bgcolor="khaki"><a href="NewUser.html">Create New Account</a></th>
+                             <th bgcolor="khaki"><a href="Forget.html">Forget PassWord</a></th>
+                         </tr>
+                         <tr>
+                             <th colspan="2" bgcolor="green"> <marquee width="100%" behavior="alternate">Hello All</marquee> </th>
+                         </tr>
+                         <tr>
+                             <th colspan="2" rowspan="2" bgcolor="Orange">
+                                 <p> Great Lines By APJ Adul kalam</p>
+                                 <p> Dr. APJ Abdul kalam Sir says: <q>When There is a beauty in the character <br/>There is harmony in the home <br/>When there is a harmony in the home<br />There is Order in the Nation </q></p>
+                             </th>
+                         </tr>
+                     </table>
+                 </form>
+        </div>
+   </center>
+</body>
+</html>
